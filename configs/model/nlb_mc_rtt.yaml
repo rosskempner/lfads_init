@@ -1,6 +1,11 @@
 _target_: lfads_torch.model.LFADS
 
 # --------- architecture --------- #
+# n_samples x n_timesteps x n_channels
+# encod_data_dim: The n_channels dimension of encod_data from your data file.
+# encod_seq_len: The n_timesteps dimension of encod_data from your data file.
+# recon_seq_len: The n_timesteps dimension of recon_data from your data file.
+# readout.modules.0.out_features: The n_channels dimension of recon_data from your data file.
 encod_data_dim: 98
 encod_seq_len: 120
 recon_seq_len: 160
